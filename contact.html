@@ -1,0 +1,113 @@
+<!--This website is a company website called
+Command Resources
+Domain name is cmdresources.com 
+This is the Contact html page-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!--Meta Tag Information-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT Support Services">
+    <meta name="keywords" content="Network,Security,Cisco,Router, CallManager">
+    <meta name="author" content="Michelle Psaras">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Contact</title>
+  
+</head>
+
+<body>
+    <div>
+
+     <p class="topHeader">203-260-7950</p>   
+
+    </div>
+    <div>
+         <h2 class="navHeader";>Command Resources</h2>
+    </div> 
+     
+         <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="itSupport.html">IT Support</a> |
+            <a href="securityServices.html">Security Services</a> |
+            <a href="contact.html">Contact</a> 
+            
+             
+         </nav>   
+      
+    
+         <h2 style=padding:21px;>Fill out the form to get in touch with us:</h2>
+
+      <section>
+         
+         <div class="container-contact">
+           <form action="https://formspree.io/f/xoqyavjb" method="POST" id="my-form">
+
+            <div class="form-group">
+               <label for="firstName">First Name</label>
+               <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div class="form-group">
+               <label for="lastName">Last Name</label>
+               <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-group">
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+               <label for="message">Message</label>
+               <textarea name="message" id="message" cols="30" rows="2"></textarea>
+
+            </div>
+
+            <button type="submit">Submit</button>   
+            
+           </form> 
+         </div>
+         <div id="status"></div>
+      </section>
+         <script src="main.js"></script>
+
+
+      </div>  
+        
+   
+      <footer>
+         <div class = "row">  
+            <div class= "column left">
+                  <h4>Connect with us:</h4>
+                  <ul>
+                     <li><a href="http://facebook.com" target=_blank><i class="fab fa-facebook-f"></i></a></li>
+                     <li> <a href="http://twitter.com" target=_blank><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="http://instagram.com" target=_blank><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+            
+               <script src="https://kit.fontawesome.com/21e7420973.js" crossorigin="anonymous"></script>
+            </div> 
+            <div class="column right">
+               <h4>Address:</h4>
+               <p>142 Greenwood Lane</p>
+               <p>Monroe, CT  06468</p>
+            </div> 
+            </div>
+          <!--Will get current year for the copyight-->
+         <p style=text-align:center>Copyright &copy; <script>document.write(new Date().getFullYear());</script> by Command Resources and Engineering</p>
+         
+         
+         </footer> 
+
+</body>
+
+
+
+</html>

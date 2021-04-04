@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+    .topHeader {
+    text-align: right;
+    background-color:#333;
+    color: #fff;
+    padding: 15px;  
+   }
+
+   .navHeader {
+    text-align: center;
+    background-color:rgb(145, 145, 146);
+    color:darkgrey #fff;
+    padding: 15px; 
+    font-size: 38px; 
+   }
+   body {
+    font-family:"Lato", sans-serif;
+    position: relative;
+    padding-bottom: 80px;
+    }
+
+    /* Home page */
+
+    .two-row-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: fit-content;
+
+    }
+
+    .index-image-wrapper{
+        height: 350px;
+        background: url('images/DataCenter_Cropped.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+    
+   
+    }
+    .index-image-wrapper h1{
+     font-size: 45px;
+     font-weight: 300;
+     margin: 10px;
+   
+    }   
+  
+    .index-content-wrapper {
+        text-align: center;
+        color:darkgrey #fff;
+        padding: 30px; 
+        }
+
+    .index-content-wrapper h1{
+    color: lightseagreen;
+    }
+
+    /*Contact Page */
+    section{
+        height: 70vh;
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+     
+    }
+    .container-contact{
+        width: 90%; 
+        max-width: 500px; 
+        margin: 0 auto;  
+        padding: 20px;
+        box-shadow: 0px 0px 20px #00000010;
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .form-group{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 20px;
+
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        border: 1px solid rgba(128,128,128,0.199);
+        margin-top: 5px;
+    
+    }
+    textarea{
+        resize: vertical;
+
+    }
+    button[type="submit"]{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 8px;
+        font-family: 'Montserrat';
+        color: rgb(27, 166, 247);
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: .3s ease background-color;
+
+    }
+    button[type="submit"]:hover{
+        background-color: rgb(214, 226, 236);
+    }
+    #status {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+    #status.success{
+        background-color: rgb(211,250,153);
+        animation: status 4s ease forwards;
+
+    }
+    #status.error{
+        background-color: rgb(250, 129, 92);
+        color: white;
+        animation: status 4s ease forwards;
+    }
+    /* animation of contact page */
+    @keyframes status {
+        0%{
+            opacity: 1;
+            pointer-events: all;
+        }
+       90%{
+            opacity: 1;
+            pointer-events: all;
+        }
+        100%{
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        background-color:rgb(145, 145, 146);    
+        padding: 15px; 
+        font-weight: bold;  
+        }
+
+    a {
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0.25rem 0.5rem;
+     }
+   
+    /* unvisited link */
+    a:link {   
+        color: purple;
+    }
+    /*visited link */
+    a:visited { 
+        color: black;    
+    } 
+      /* mouse over link */
+    a:hover {
+        background-color: lightgrey;    
+    }
+    /* selected link */
+    a:active {
+        color: purple; 
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: black;
+        }   
+     .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size:35px;  
+        }      
+         
+    .focusPic {
+        width: 100%;
+        height: 400px;
+        background-image: url('DataCenter.jpg');
+        background-size:cover;
+        border: 1px grey;
+       }
+    .focus {
+    text-align: center;
+    color:darkgrey #fff;
+    padding: 75px;  
+    }
+ 
+.row{
+    display: flex;
+    justify-content: space-around;
+
+   
+} 
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black !important
+}
+/* ITSupport Page */
+.itsupport{
+    background: black;
+    width: 100%; 
+    /* padding: 3rem; */
+
+}
+.itsupport_image{
+    width:100%;
+    height: 315px;
+    object-fit: cover;
+}
+.focus_itsupport {
+    text-align: left;
+    color:darkgrey #fff;
+    padding: 25px;  
+    }
+ .centered_itsupport {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95px,-95px);
+    font-size:35px;     
+    font-weight: bold;
+          
+  } 
+  /* Security Services Page */
+.securityservices{
+    background: black;
+    width: 100%;
+    /* padding: 3rem; */
+
+}
+.securityservices_image{
+    width:100%;
+    height: 325px;
+    object-fit: cover;
+}
+.focus_securityservices {
+    text-align: left;
+    color:darkgrey #fff;
+    padding: 25px;  
+    }
+ .centered_securityservices {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:35px;     
+    font-weight: bold;
+          
+  }                   
+/* About page */
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-image-wrapper img{
+    max-width: 100%;
+    height: auto;
+   
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1{
+   color: lightseagreen;
+}
+/* footer of website */
+ul li {
+    display: inline-block;
+    background-color: dodgerblue;
+    padding: 5px 6px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+
+}
+ul li a{
+    font-size: 20px;
+    height: 100%;
+}
+ul li:hover {
+    background-color: royalblue;
+    transition: all 0.7s ease;  
+
+}
+ul li:hover a{
+    background-color: royalblue;
+    transition: all 0.7s ease;   
+
+}
+ul li:hover a i{
+   color: yellow;
+   transition: all 0.7s ease;
+
+  
+
+}
+ul li a i{
+    color: #fff;
+    
+   
+
+}
+.column left {
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer {
+ 
+    background-color:#333;
+    color: #fff;
+    padding: 10px; 
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+}
